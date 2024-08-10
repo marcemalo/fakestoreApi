@@ -1,0 +1,69 @@
+/* Apply a colorful gradient background to the entire form container */
+.form__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b, #f7d794);
+}
+
+/* Style the form container with a soft shadow and rounded corners */
+.form {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Style the form header with a gradient text effect */
+.form h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ff6b6b, #f7d794);
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+}
+
+/* Style the input fields with a border and subtle hover effect */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="url"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add focus effects to the input fields */
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="password"]:focus,
+.form input[type="url"]:focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+  outline: none;
+}
+
+/* Style the submit button with a gradient background and hover effect */
+.form__button {
+  background: linear-gradient(90deg, #ff6b6b, #f7d794);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Add hover effects to the button */
+.form__button:hover {
+  background: linear-gradient(90deg, #f7d794, #ff6b6b);
+  transform: scale(1.05);
+}
